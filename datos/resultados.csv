@@ -1,0 +1,56 @@
+jornada,fecha,local,visitante,pl,pv
+1,03/10,Algeciras,Badajoz,87,69
+1,03/10,Ponferrada,SBA,94,86
+1,03/10,Valladolid,Melilla,59,70
+1,03/10,Tres Cantos,Estudiantes,77,71
+1,04/10,Toledo,Cáceres,66,82
+1,04/10,Jaén,Getafe,75,70
+1,04/10,Leonesa,Morón,83,73
+2,10/10,Morón,Tres Cantos,93,90
+2,10/10,Badajoz,Jaén,89,85
+2,10/10,Cáceres,Algeciras,86,71
+2,10/10,Getafe,Valladolid,75,91
+2,10/10,Estudiantes,Toledo,78,86
+2,11/10,Melilla,Ponferrada,82,69
+2,11/10,SBA,Leonesa,77,84
+3,17/10,Valladolid,Badajoz,106,59
+3,17/10,Ponferrada,Getafe,83,60
+3,17/10,Estudiantes,Morón,68,67
+3,17/10,Tres Cantos,SBA,75,70
+3,18/10,Toledo,Algeciras,100,79
+3,18/10,Jaén,Cáceres,84,82
+3,18/10,Leonesa,Melilla,92,96
+4,24/10,Badajoz,Ponferrada,78,84
+4,24/10,Cáceres,Valladolid,84,79
+4,24/10,Getafe,Leonesa,83,86
+4,25/10,Melilla,Tres Cantos,81,64
+4,25/10,Algeciras,Jaén,71,66
+4,25/10,Morón,Toledo,90,81
+4,25/10,SBA,Estudiantes,79,69
+5,31/10,Morón,SBA,74,71
+5,31/10-01/11,Valladolid,Algeciras,93,90
+5,31/10-01/11,Ponferrada,Cáceres,78,90
+5,31/10,Estudiantes,Melilla,75,92
+5,31/10-01/11,Tres Cantos,Getafe,53,88
+5,31/10-01/11,Toledo,Jaén,93,81
+5,31/10-01/11,Leonesa,Badajoz,83,72
+6,08/11,Melilla,Morón,85,61
+6,08/11,Algeciras,Ponferrada,92,68
+6,07-08/11,Valladolid,Jaén,77,75
+6,07-08/11,Cáceres,Leonesa,83,81
+6,07-08/11,Badajoz,Tres Cantos,63,67
+6,07-08/11,SBA,Toledo,85,77
+6,07-08/11,Getafe,Estudiantes,88,80
+7,14-15/11,Toledo,Valladolid,80,88
+7,14-15/11,Tres Cantos,Cáceres,76,90
+7,14/11,Badajoz,Estudiantes,81,84
+7,14-15/11,Leonesa,Algeciras,105,98
+7,15/11,SBA,Melilla,66,83
+7,14-15/11,Morón,Getafe,80,60
+7,14-15/11,Ponferrada,Jaén,106,77
+8,21-22/11,Badajoz,Morón,80,82
+8,21-22/11,Cáceres,Estudiantes,102,79
+8,21-22/11,Valladolid,Ponferrada,98,78
+8,21-22/11,Algeciras,Tres Cantos,72,78
+8,21-22/11,Jaén,Leonesa,95,84
+8,22/11,Melilla,Toledo,88,65
