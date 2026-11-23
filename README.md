@@ -6,12 +6,13 @@ Datos actualizados tras la **jornada 8** (Getafe y SBA con 7 partidos: su partid
 ## Contenido
 
 - `index.html`: la web completa en un solo archivo. Funciona sin conexión: se abre con doble clic en cualquier navegador.
-  Pestañas: Resumen, Esta semana, Próximo rival (scouting de Getafe), Grupo A, Grupo B, Actas, Jugadores, Fichas y Fuentes.
+  Pestañas: Resumen, Esta semana, Próximo rival (scouting de Getafe), Grupo A, Grupo B, Actas, Tiro (mapa de calor), Jugadores, Fichas y Fuentes.
 - `datos/`: los datos de partida en CSV.
   - `grupoA_jornada8.csv`: totales de los 14 equipos (contrastados con la tabla de medias por equipo de la FEB).
   - `resultados.csv` y `clasificacion.csv`: resultados por jornada y clasificación (J1–J4 oficiales; J5–J8 calculadas con los resultados).
   - `melilla_partidos.csv`: partidos de Melilla.
   - `jugadores_melilla_liga.csv`: estadísticas acumuladas de liga de los jugadores de Melilla.
+  - `tiros_melilla.csv`: tiros de Melilla leídos de los gráficos de tiro de la FEB (J7 y J8), en metros respecto al aro (x lateral, y hacia el centro del campo).
   - `grupoB_jornada8.csv`: totales de los 14 equipos del Grupo B tras la jornada 8 (referencia).
 
 ## Publicarla como página web (GitHub Pages)
