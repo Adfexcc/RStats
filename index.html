@@ -42,6 +42,7 @@ window.dash={colors:['#1D4E9E','#E8792B','#2E8B57','#C8102E','#7A4FB5','#0F8FA8'
 .mx .tabs button[aria-selected=true]{color:var(--color-bg);border-color:transparent}
 .mx .tab{display:none;flex-direction:column;gap:var(--cds-gap-lg)}
 .mx .tab.on{display:flex}
+.mx .howto{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:10px;margin:8px 0 4px}.mx .howto>div{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:10px 12px;font-size:var(--cds-font-size-caption);line-height:1.5}.mx .howto .hn{display:inline-block;width:20px;height:20px;border-radius:50%;background:var(--cds-accent,#1D4E9E);color:#fff;text-align:center;line-height:20px;font-weight:700;margin-right:6px;font-size:11px}
 .mx .hcap{font-weight:600;font-size:var(--cds-font-size-body);margin:4px 0}.mx .hbtns{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}.mx .hbtns button{font:inherit;font-size:var(--cds-font-size-caption);border:1px solid var(--color-border-line);background:var(--color-panel);color:var(--color-fg);border-radius:999px;padding:4px 12px;cursor:pointer}
 .mx .firma{position:absolute;right:var(--cds-pad-xl);bottom:var(--cds-pad-md);font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
 .mx .logo{height:34px;vertical-align:middle;margin-right:10px;background:#fff;border-radius:6px;padding:3px 4px}
@@ -270,7 +271,12 @@ window.dash={colors:['#1D4E9E','#E8792B','#2E8B57','#C8102E','#7A4FB5','#0F8FA8'
   <section class="tab" id="t-tiro">
     <div class="card" id="heat-card">
       <h2>Mapa de calor de tiro</h2>
-      <p class="cn">Tiros de Melilla leídos de los gráficos de tiro de la FEB, con las dos canastas llevadas a la misma media pista. Izquierda: densidad de tiros (más rojo, más tiros). Derecha: acierto en zonas de 1,5 × 1,5 m con al menos 3 tiros (verde, mucho; rojo, poco). Puntos: canastas; círculos: fallos. Pasa el ratón por cada tiro o zona.</p>
+      <p class="cn">Cada punto es un tiro de Melilla en los dos últimos partidos. Están todos dibujados atacando la misma canasta, abajo, como si viéramos la media pista desde la grada.</p>
+      <div class="howto">
+        <div><span class="hn">1</span><b>Los puntos.</b> Punto negro relleno: canasta. Círculo azul vacío: fallo. Pasa el ratón por encima para ver el partido y la distancia al aro.</div>
+        <div><span class="hn">2</span><b>Mapa de la izquierda: cuánto tiramos.</b> Es como un mapa del tiempo: donde se juntan muchos tiros, la mancha se pone naranja y roja. Donde no hay color, casi no tiramos.</div>
+        <div><span class="hn">3</span><b>Mapa de la derecha: cuánto acertamos.</b> El campo se divide en cuadros de 1,5 × 1,5 m. Solo se pinta un cuadro si tiene al menos 3 tiros. Verde: metemos más de la mitad. Amarillo: alrededor del 40%. Rojo: fallamos casi todos. Pasa el ratón por un cuadro para ver los tiros exactos.</div>
+      </div>
       <div class="hbtns" id="heat-btns"></div>
       <div id="heat" data-source="tiros" style="min-height:300px"></div>
     </div>
@@ -278,7 +284,19 @@ window.dash={colors:['#1D4E9E','#E8792B','#2E8B57','#C8102E','#7A4FB5','#0F8FA8'
       <h2>Por zonas</h2>
       <p class="cn">Puntos por tiro: lo que vale de media cada intento desde esa zona. Por encima de 1, muy rentable.</p>
       <div class="tbl"><table id="zt" data-source="zonas" data-row-key="zona"><thead><tr><th data-field="zona">Zona</th><th data-field="intentos">Canastas / tiros</th><th data-field="acierto">Acierto</th><th data-field="puntos_por_tiro">Puntos por tiro</th></tr></thead><tbody></tbody></table></div>
-      <div class="how">💡 Junto al aro sacamos 1,43 puntos por tiro y en triples 0,88; los tiros de 2 lejos del aro, por debajo de 0,65. Algunos puntos del gráfico de la FEB se solapan: se recogen 125 de los 144 tiros de los dos partidos (los triples anotados coinciden con el acta). El gráfico ante Morón no se usa porque muestra más tiros de los que hizo Melilla.</div>
+      <div class="grid2" style="margin-top:10px">
+        <div class="card key good"><h3>Qué nos dice</h3><ul>
+          <li><b>Nuestro mejor tiro es junto al aro.</b> 33 canastas en 46 tiros (72%): cada intento vale 1,43 puntos. Es la mancha roja del mapa de la izquierda y el verde de la derecha.</li>
+          <li><b>El triple sale de dos sitios:</b> los dos laterales altos, a 45 grados. El de la izquierda del dibujo entra mejor que el de la derecha. Muchos se tiran muy lejos de la línea.</li>
+          <li><b>Los tiros de 2 lejos del aro no compensan.</b> En la zona pero sin llegar al aro (ganchos, tiros tras bote), 6 de 19. En media distancia, 1 de 9.</li>
+        </ul></div>
+        <div class="card key"><h3>Qué hacer con esto</h3><ul>
+          <li><b>Terminar en el aro o tirar de tres.</b> Un tiro de media distancia vale 0,22 puntos; un triple, 0,88; una entrada, 1,43.</li>
+          <li><b>Si el balón llega a la zona y no hay tiro claro junto al aro, mejor pasar fuera</b> que lanzar el gancho o el tiro forzado.</li>
+          <li><b>Triples tras pase y desde cerca de la línea</b>, no tras bote desde 8 o 9 metros.</li>
+        </ul></div>
+      </div>
+      <p class="foot">Cómo se ha hecho: cada tiro se ha leído de los gráficos de tiro de la FEB de Melilla ante SBA (J7) y Toledo (J8). Algunos puntos se tapan entre sí, así que se recogen 125 de los 144 tiros de esos dos partidos; los triples anotados coinciden con el acta. El gráfico ante Morón no se usa porque muestra más tiros de los que hizo Melilla. Con dos partidos es orientativo: cada semana que llegue un gráfico nuevo, el mapa será más fiable.</p>
     </div>
   </section>
 
