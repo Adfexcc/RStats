@@ -22,5 +22,3 @@ Ojo: una página de GitHub Pages es **pública** aunque el repositorio sea priva
 
 Estadísticas, resultados y actas oficiales de la FEB (feb.es / baloncestoenvivo.feb.es). Fotos de jugadores: web del Club Melilla Baloncesto.
 Métricas: Dean Oliver (*Basketball on Paper*), John Hollinger y Basketball-Reference.
-
-Hecho con 💙 por Ivanchu
